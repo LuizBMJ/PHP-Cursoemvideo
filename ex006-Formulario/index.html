@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <div id="formulario">
+            <h1>Cadastro</h1>
+            <form action="paginas/cad.php" method="GET" id="cadastro">
+                <p class="inputs">
+                    <input
+                    type="text" name="nome" id="inome" required
+                    minlength="1" maxlength="20"
+                    placeholder="Nome"
+                    >
+                </p>
+                <p class="inputs">
+                    <input
+                    type="text" name="sobrenome" id="isobrenome"
+                    minlength="1" maxlength="20" placeholder="Sobrenome"
+                    >
+                </p>
+                <input type="submit" value="Enviar" id="isubmit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

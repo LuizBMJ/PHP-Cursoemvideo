@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+div#formulario {
+    width: 380px;
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+div#formulario h1 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+form#cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form#cadastro p.inputs {
+    width: 100%;
+}
+
+form#cadastro p.inputs input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+}
+
+form#cadastro p.inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form#cadastro p.inputs input:focus {
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+#isubmit {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 1rem;
+
+    background: white;
+    color: #1e3c72;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#isubmit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
