@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#resultado {
+    background: #ffffff;
+    width: 90%;
+    max-width: 550px;
+    padding: 40px;
+
+    border-radius: 12px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+}
+
+/* faixa superior estilo confirmação bancária */
+#resultado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+    border-radius: 12px 12px 0 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+/* estilizando o texto que o PHP imprime */
+#resultado {
+    color: #334155;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* destaque no valor convertido */
+#resultado strong {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+small {
+    display: block;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+#return {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#return a {
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+#return a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#return a:active {
+    transform: translateY(0);
+}
