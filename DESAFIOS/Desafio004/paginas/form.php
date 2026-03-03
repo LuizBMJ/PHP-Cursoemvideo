@@ -27,11 +27,11 @@
 
                     // pega o valor da cotação
                     $cotacao = floatval($data[0]['valor']);
-
+                    
                     $conversao = $num * $cotacao;
 
                     $numFormatado = number_format($num, 2, ',', '.');
-                    $dolFormatado = number_format($cotacao, 2, ',', '.');
+                    $dolFormatado = number_format($conversao, 2, ',', '.');
 
                     echo "<p>Valor informado: <strong>R$ $numFormatado </strong></p>";
                     echo "<p>Valor convertido: <strong>US$ $dolFormatado </strong></p>";
