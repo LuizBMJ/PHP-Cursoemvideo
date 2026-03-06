@@ -17,7 +17,7 @@
     <main>
         <section id="salary">
             <h1>Informe seu salário</h1>
-            <form action="" method="get">
+            <form action="<?= $_SERVER["PHP_SELF"]; ?>" method="get">
                 <p>
                     <input 
                     type="number" name="num1" id="num1"
