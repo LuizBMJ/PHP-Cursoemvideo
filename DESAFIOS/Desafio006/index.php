@@ -20,14 +20,14 @@
                 <p>
                     <input 
                     type="number" name="num1" id="inum1"
-                    value="<?= $num1 ?>"
+                    value="<?= $num1 ?>" required
 
                     >
                 </p>
                 <p>
                     <input 
                     type="number" name="num2" id="num2"
-                    value="<?= $num2 ?>"
+                    value="<?= $num2 ?>" required
                     >
                 </p>
                 <input type="submit" value="Analisar">
