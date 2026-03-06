@@ -44,10 +44,10 @@
             <h1>Saque de R$<?=number_format($saque, 2, ",", ".")?> realizado</h1>
             <p>O caixa eletrônico vai te entregar as seguintes notas:</p>
             <ul>
-                <li><img src="img/100-reais.jpg" alt="Nota de 100" class="nota"> x<?=$tot100?></li>
-                <li><img src="img/50-reais.jpg" alt="Nota de 50" class="nota"> x<?=$tot50?></li>
-                <li><img src="img/10-reais.jpg" alt="Nota de 10" class="nota"> x<?=$tot10?></li>
-                <li><img src="img/5-reais.jpg" alt="Nota de 5" class="nota"> x<?=$tot5?></li>
+                <li><img src="imagens/notade100reais.jpg" alt="Nota de 100" class="nota"> x<?=$tot100?></li>
+                <li><img src="imagens/notade50reais.jpg" alt="Nota de 50" class="nota"> x<?=$tot50?></li>
+                <li><img src="imagens/notade10reais.jpg" alt="Nota de 10" class="nota"> x<?=$tot10?></li>
+                <li><img src="imagens/notade5reais.jpg" alt="Nota de 5" class="nota"> x<?=$tot5?></li>
             </ul>
         </section>
     </main>

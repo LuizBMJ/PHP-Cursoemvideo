@@ -27,7 +27,7 @@
                 <div class="input-group">
                     <label for="reajuste">Qual será o percentual de reajuste? (<span id="p">0</span>%)</label>
                     <input type="range" name="reajuste" id="reajuste" min="0" max="100" step="1" 
-                           value="<?=$reajuste?>" oninput="mudaValor()">
+                            value="<?=$reajuste?>" oninput="mudaValor()">
                 </div>
 
                 <input type="submit" value="Reajustar" id="btn-reajuste">
