@@ -13,7 +13,7 @@
 
     ?>
     <main>
-        <form action="<?=  $_SERVER["PHP_SELF"]; ?> ?>" method="get">
+        <form action="<?=  $_SERVER["PHP_SELF"]; ?>" method="get">
             <input type="number" name="numero1" id="numero2" value="<?=$valor1 ?>">
             <input type="number" name="numero2" id="numero2" value="<?=$valor2 ?>">
             <input type="submit" value="Somar">
