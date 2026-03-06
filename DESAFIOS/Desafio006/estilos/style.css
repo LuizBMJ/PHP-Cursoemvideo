@@ -1,122 +1,114 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+/* Configurações Gerais */
+:root {
+    --primary-color: #4a90e2;
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --white: #ffffff;
+    --border-color: #222;
 }
 
-body{
-    background: linear-gradient(135deg,#5f6af2,#8fd3f4);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-main{
-    background:white;
-    width:520px;
-    padding:35px;
-    border-radius:16px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
-}
-
-/* TITULOS */
-
-h1{
-    text-align:center;
-    margin-bottom:20px;
-    color:#333;
-}
-
-/* FORMULARIO */
-
-#formulario{
-    margin-bottom:35px;
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-input[type="number"]{
+main {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 100%;
-    padding:12px;
-    border-radius:8px;
-    border:1px solid #ccc;
-    font-size:16px;
+    max-width: 500px;
 }
 
-input[type="submit"]{
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#5f6af2;
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.25s;
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-input[type="submit"]:hover{
-    background:#3f48c7;
+/* Estilização do Formulário */
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 2rem;
 }
 
-/* RESULTADO */
-
-#result{
-    margin-top:10px;
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 
-/* ESTRUTURA DA DIVISÃO */
-
-#divisao{
-    margin-top:30px;
-    display:grid;
-    grid-template-columns:120px 120px;
-    grid-template-rows:60px 60px;
-    justify-content:center;
-    align-items:center;
-    font-size:36px;
-    font-weight:bold;
+input[type="number"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
 }
 
-/* dividendo */
-
-.dividendo{
-    grid-column:1;
-    grid-row:1;
-    text-align:right;
-    padding-right:15px;
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-/* divisor */
-
-.divisor{
-    grid-column:2;
-    grid-row:1;
-    border-left:4px solid black;
-    padding-left:15px;
+input[type="submit"]:hover {
+    background-color: #357abd;
 }
 
-/* resto */
-
-.resto{
-    grid-column:1;
-    grid-row:2;
-    text-align:right;
-    padding-right:15px;
-    color:#e74c3c;
+/* O "Pulo do Gato": A Estrutura da Divisão */
+#divisao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 250px;
+    margin: 20px auto;
+    font-size: 2rem;
+    text-align: center;
 }
 
-/* quociente */
+.dividendo {
+    padding: 10px;
+    border-bottom: 4px solid var(--border-color); /* Linha opcional se quiser separar do resto */
+}
 
-.quociente{
-    grid-column:2;
-    grid-row:2;
-    padding-left:15px;
-    color:#27ae60;
+.divisor {
+    padding: 10px;
+    border-left: 4px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
+}
+
+.resto {
+    padding: 10px;
+    color: #e74c3c; /* Destaque para o resto */
+    text-decoration: underline dotted;
+}
+
+.quociente {
+    padding: 10px;
+    color: #27ae60; /* Destaque para o resultado */
+}
+
+/* Ajuste fino para alinhar o resto e quociente abaixo */
+#divisao > div {
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
